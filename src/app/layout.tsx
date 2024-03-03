@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik, Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import Link from "next/link";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -25,10 +26,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>
-        <header>Conteúdo</header>
+      <body className={`${inter.className} px-6 2xl:px-80`}>
+        <header className="h-[76px] 2xl:min-h-[128px] flex justify-between items-center">
+          <Link
+            href="/"
+            className={`${rubik.className} text-2xl font-medium text-blue-500`}
+          >
+            Ani.me
+          </Link>
+          <Nav />
+        </header>
 
-        {children}
+        <main className="min-h-screen">{children}</main>
 
         <footer className="text-xs sm:text-lg text-center text-gray-400 py-6">
           Todos os direitos reservados aos criadores e produtores dos animes

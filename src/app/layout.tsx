@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Rubik, Inter } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
 
-const inter = Inter({ subsets: ["latin"] });
+const rubik = Rubik({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +24,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-br">
+      <body className={inter.className}>
+        <header>Conteúdo</header>
+
+        {children}
+
+        <footer className="text-xs sm:text-lg text-center text-gray-400 py-6">
+          Todos os direitos reservados aos criadores e produtores dos animes
+        </footer>
+      </body>
     </html>
   );
 }

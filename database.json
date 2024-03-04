@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Nanatsu no Taizai",
+    "urlImage": "/nanatsu.jpg",
+    "episodes": 24
+  },
+  {
+    "id": 2,
+    "title": "Darling in the Franxx",
+    "urlImage": "/darlingFranxx.jpg",
+    "episodes": 1
+  },
+  {
+    "id": 3,
+    "title": "Douluo Dalu",
+    "urlImage": "/DouluoDalu.jpg",
+    "episodes": 214
+  },
+  {
+    "id": 4,
+    "title": "Overlord 4",
+    "urlImage": "/Overlord4.jpg",
+    "episodes": 5
+  },
+  {
+    "id": 5,
+    "title": "One Piece",
+    "urlImage": "/onePiece.jpg",
+    "episodes": 1029
+  }
+]

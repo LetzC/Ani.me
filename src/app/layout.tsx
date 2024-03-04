@@ -26,12 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${inter.className} px-6 2xl:px-80`}>
+      <body className={`${rubik.className} px-6 2xl:px-80`}>
         <header className="h-[76px] 2xl:min-h-[128px] flex justify-between items-center">
-          <Link
-            href="/"
-            className={`${rubik.className} text-2xl font-medium text-blue-500`}
-          >
+          <Link href="/" className={"text-2xl font-medium text-blue-500"}>
             Ani.me
           </Link>
           <Nav />
@@ -39,7 +36,9 @@ export default function RootLayout({
 
         <main className="min-h-screen">{children}</main>
 
-        <footer className="text-xs sm:text-lg text-center text-gray-400 py-6">
+        <footer
+          className={`${inter.className} text-xs sm:text-lg text-center text-gray-400 py-6`}
+        >
           Todos os direitos reservados aos criadores e produtores dos animes
         </footer>
       </body>

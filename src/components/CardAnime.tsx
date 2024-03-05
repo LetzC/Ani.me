@@ -14,9 +14,12 @@ interface Anime {
 
 const CardAnime = ({ anime }: { anime: Anime }) => {
   return (
-    <div className="flex flex-col relative items-center gap-4 mt-6">
+    <div className="flex flex-col relative items-center">
       <div
-        className="rounded-xl z-[-2]"
+        className="h-52 md:min-h-52 xl:h-[50%] 3xl:h-64
+                  w-full sm:min-w-40
+                  rounded-xl z-[-2]
+                  "
         style={{
           backgroundImage: `url(${anime.urlImage})`,
           backgroundSize: "cover",
@@ -28,10 +31,10 @@ const CardAnime = ({ anime }: { anime: Anime }) => {
       ></div>
 
       <p
-        className={`${inter.className} text-gray-400 text-xs absolute bottom-12`}
+        className={`${inter.className} text-gray-400 text-xs relative bottom-8 2xl:text-sm`}
       >{`Episódio ${anime.episodes}`}</p>
 
-      <p className="text-sm">{anime.title}</p>
+      <p className="text-sm 2xl:text-lg">{anime.title}</p>
     </div>
   );
 };

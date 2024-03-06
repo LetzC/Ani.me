@@ -26,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${rubik.className} px-6 2xl:px-80`}>
+      <body
+        className={`${rubik.className} px-6 sm:px-8 xl:px-28 2xl:px-[16.3%] 3xl:`}
+      >
         <header className="h-[76px] 2xl:min-h-[128px] flex justify-between items-center">
           <Link href="/" className={"text-2xl font-medium text-blue-500"}>
             Ani.me

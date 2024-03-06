@@ -14,9 +14,9 @@ interface Anime {
 
 const CardAnime = ({ anime }: { anime: Anime }) => {
   return (
-    <div className="flex flex-col relative items-center">
+    <div className="flex flex-col relative items-center mx-auto">
       <div
-        className="h-52 md:min-h-52 xl:h-[50%] 3xl:h-64
+        className="h-52 md:min-h-52 2xl:min-h-60 3xl:h-64
                   w-full sm:min-w-40
                   rounded-xl z-[-2]
                   "
@@ -24,8 +24,6 @@ const CardAnime = ({ anime }: { anime: Anime }) => {
           backgroundImage: `url(${anime.urlImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          width: "154px",
-          height: "200px",
           boxShadow: "rgba(0, 0, 0, 1) 0px -82px 76px -32px inset",
         }}
       ></div>

@@ -28,5 +28,83 @@
     "title": "One Piece",
     "urlImage": "/onePiece.jpg",
     "episodes": 1029
+  },
+  {
+    "id": 6,
+    "title": "Fuuto Tantei",
+    "urlImage": "/fuutoTantei.jpg",
+    "episodes": 2
+  },
+  {
+    "id": 7,
+    "title": "Hoshi no Samidare",
+    "urlImage": "/hoshiSamidare.jpg",
+    "episodes": 6
+  },
+  {
+    "id": 8,
+    "title": "Bucchigire!",
+    "urlImage": "/bucchigire.jpg",
+    "episodes": 6
+  },
+  {
+    "id": 9,
+    "title": "Aoashi",
+    "urlImage": "/aoashi.jpg",
+    "episodes": 16
+  },
+  {
+    "id": 10,
+    "title": "Shadows House 2",
+    "urlImage": "/shadowsHouse2.jpg",
+    "episodes": 2
+  },
+  {
+    "id": 11,
+    "title": "Summer Time Rendering",
+    "urlImage": "/summerTime.jpg",
+    "episodes": 19
+  },
+  {
+    "id": 12,
+    "title": "Orient 2",
+    "urlImage": "/Orient2.jpg",
+    "episodes": 2
+  },
+  {
+    "id": 13,
+    "title": "Meng Qi Shi Shen",
+    "urlImage": "/mengQi.jpg",
+    "isNew": true
+  },
+  {
+    "id": 14,
+    "title": "Made in Abyss",
+    "urlImage": "/madeAbyss.jpg",
+    "isNew": true
+  },
+  {
+    "id": 15,
+    "title": "Prima Doll",
+    "urlImage": "/primaDoll.jpg",
+    "isNew": true
+  },
+  {
+    "id": 16,
+    "title": "The Rising of the Shield Hero",
+    "urlImage": "/theRisingHero.webp",
+    "isNew": true
+  },
+  {
+    "id": 17,
+    "title": "Yuusha, Yamemasu",
+    "urlImage": "/yuusha.png",
+    "isNew": true
+  },
+  {
+    "id": 18,
+    "title": "Kami Kuzu Idol",
+    "urlImage": "/kamiKuzu.jpg",
+    "isNew": true
   }
 ]

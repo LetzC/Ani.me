@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import database from "../../database.json";
 import CardAnime from "./CardAnime";
 import { useState } from "react";
+import Button from "./Button";
 
 const Catalog = ({ getNew = false }: { getNew?: boolean }) => {
   const isSmall = useMediaQuery({ query: "(max-width: 768px)" });
@@ -25,12 +26,13 @@ const Catalog = ({ getNew = false }: { getNew?: boolean }) => {
       ))}
       {filteredAnimesDatabase.length > 4 &&
         visibleAnimes < filteredAnimesDatabase.length && (
-          <button
-            onClick={() => setVisibleAnimes(filteredAnimesDatabase.length)}
-            className="bg-gray-900 py-2 w-48 col-span-full mx-auto mb-8 rounded"
+          <Button
+            onClickFunction={() =>
+              setVisibleAnimes(filteredAnimesDatabase.length)
+            }
           >
-            Ver Mais
-          </button>
+            Ver mais
+          </Button>
         )}
     </section>
   );

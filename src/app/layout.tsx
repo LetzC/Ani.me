@@ -39,7 +39,7 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
 
         <footer
-          className={`${inter.className} text-xs sm:text-lg text-center text-gray-400 py-6`}
+          className={`${inter.className} text-xs sm:text-lg text-center text-gray-400 py-6 mt-12 xl:mt-16`}
         >
           Todos os direitos reservados aos criadores e produtores dos animes
         </footer>

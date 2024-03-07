@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Rubik, Inter } from "next/font/google";
 import "./globals.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from "@/components/Nav";
 import Link from "next/link";
+
+import React from "react";
 
 const rubik = Rubik({
   subsets: ["latin"],

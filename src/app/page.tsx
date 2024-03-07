@@ -1,11 +1,19 @@
+import CarouselAnimes from "@/components/CarouselAnimes";
 import Catalog from "@/components/Catalog";
-import Image from "next/image";
 
 const titleStyle = "font-medium text-lg mb-8 md:text-2xl 2xl:text-3xl md:mb-10";
 
 export default function Home() {
   return (
     <main>
+      <section className="mb-16">
+        <h2 className="text-2xl 2xl:text-4xl">Últimas novidades</h2>
+        <p className="text-gray-300 text-sm mt-2 2xl:text-lg">
+          O que você vai assistir hoje?
+        </p>
+        <CarouselAnimes />
+      </section>
+
       <section>
         <h3 className={titleStyle}>Últimas atualizações</h3>
         <Catalog />

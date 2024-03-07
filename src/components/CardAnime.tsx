@@ -9,12 +9,12 @@ interface Anime {
   id: number;
   title: string;
   urlImage: string;
-  episodes: number;
+  episodes?: number;
 }
 
 const CardAnime = ({ anime }: { anime: Anime }) => {
   return (
-    <div className="flex flex-col relative items-center mx-auto">
+    <div className="flex flex-col relative items-center text-center mx-auto">
       <div
         className="h-52 md:min-h-52 2xl:min-h-60 3xl:h-64
                   w-full sm:min-w-40
@@ -28,11 +28,19 @@ const CardAnime = ({ anime }: { anime: Anime }) => {
         }}
       ></div>
 
-      <p
-        className={`${inter.className} text-gray-400 text-xs relative bottom-8 2xl:text-sm`}
-      >{`Episódio ${anime.episodes}`}</p>
+      {anime.episodes ? (
+        <p
+          className={`${inter.className} text-gray-400 text-xs relative bottom-8 2xl:text-sm`}
+        >{`Episódio ${anime.episodes}`}</p>
+      ) : null}
 
-      <p className="text-sm 2xl:text-lg">{anime.title}</p>
+      <p
+        className={`max-w-[169px] text-sm 2xl:text-lg ${
+          anime.episodes ? "" : "mt-8"
+        }`}
+      >
+        {anime.title}
+      </p>
     </div>
   );
 };

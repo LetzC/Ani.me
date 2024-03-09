@@ -8,6 +8,32 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #151b26;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    0deg,
+    rgb(62, 85, 198) 0%,
+    rgba(0, 163, 255, 1) 100%
+  );
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 4px;
+  border-radius: 200px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #00a3ff;
+  border-radius: 100px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

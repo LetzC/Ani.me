@@ -23,7 +23,7 @@ const CarouselAnimes = () => {
       {filteredNewsDatabase.map((animeNew, index) => (
         <div
           key={`slide${index + 1}`}
-          className="flex flex-col relative gap-y-2 xl:gap-y-4 place-content-end min-h-[180px] sm:h-80 2xl:h-96 px-4 py-10 md:px-7 2xl:px-8"
+          className="flex flex-col relative gap-y-2 xl:gap-y-4 place-content-center sm:place-content-end h-[192px] sm:h-80 2xl:h-96 px-4 py-10 md:px-7 2xl:px-8"
         >
           {animeNew.urlCover && (
             <>

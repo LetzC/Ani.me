@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "One Punch Man terá 3 temporada",
+    "urlCover": "/cover/onePunchMan.jpg",
+    "description": "Como relatado anteriormente, a franquia baseada no mangá escrito por ONE e ilustrado por Yusuke Murata, One Punch Man, divulgou um comunicado confirmando a produção de uma terceira temporada."
+  },
+  {
+    "id": 2,
+    "title": "A famosa obra Solo Leveling será lançada como anime",
+    "urlCover": "/cover/soloLeveling.jpg",
+    "description": "A Aniplex e a Crunchyroll confirmaram a data de lançamento do anime de Solo Leveling. A esperada produção chegará à plataforma de streaming em 6 de janeiro de 2024."
+  },
+  {
+    "id": 3,
+    "title": "One piece bateu a marca de 1000 episódios",
+    "urlCover": "/cover/onePiece.webp",
+    "description": "Um dos maiores fenômenos dos animes, cercado por uma legião de fãs globalmente, continua sua jornada épica e já ultrapassou a marca dos mil episódios!"
+  },
+  {
+    "id": 4,
+    "title": "Jujutsu Kaisen ganha nova temporada repleta de ação!",
+    "urlCover": "/cover/jujutsuKaisen.webp",
+    "description": "Com uma trama que prende a atenção, personagens carismáticos e cenas de ação de tirar o fôlego, esta nova temporada promete superar todas as expectativas."
+  }
+]

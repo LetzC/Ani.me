@@ -1,7 +1,7 @@
 "use client";
 
 import { useMediaQuery } from "react-responsive";
-import database from "../../database.json";
+import database from "../../database-animes.json";
 import CardAnime from "./CardAnime";
 import { useState } from "react";
 import Button from "./Button";
@@ -11,7 +11,7 @@ const Catalog = ({ getNew = false }: { getNew?: boolean }) => {
   const [visibleAnimes, setVisibleAnimes] = useState(isSmall ? 4 : 12);
 
   const filteredAnimesDatabase = database.filter((anime) =>
-    getNew ? anime.isNew : !anime.isNew && anime.type !== "news"
+    getNew ? anime.isNew : !anime.isNew
   );
 
   return (

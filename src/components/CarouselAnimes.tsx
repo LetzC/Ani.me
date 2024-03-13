@@ -1,14 +1,10 @@
 "use client";
 
-import database from "../../database.json";
+import database from "../../database-news.json";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 
 const CarouselAnimes = () => {
-  const filteredNewsDatabase = database.filter(
-    (animeNew) => animeNew.type == "news"
-  );
-
   return (
     <Carousel
       autoPlay
@@ -20,7 +16,7 @@ const CarouselAnimes = () => {
       showThumbs={false}
       className="my-10"
     >
-      {filteredNewsDatabase.map((animeNew, index) => (
+      {database.map((animeNew, index) => (
         <div
           key={`slide${index + 1}`}
           className="flex flex-col relative gap-y-2 xl:gap-y-4 place-content-center sm:place-content-end h-[192px] sm:h-80 2xl:h-96 px-4 py-10 md:px-7 2xl:px-8"

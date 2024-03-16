@@ -1,6 +1,6 @@
 import CarouselAnimes from "@/components/CarouselAnimes";
 import Catalog from "@/components/Catalog";
-import FilterNavigation from "@/components/filterNavigation";
+import FilterNavigation from "@/components/FilterNavigation";
 
 const titleStyle = "font-medium text-lg mb-8 md:text-2xl 2xl:text-3xl md:mb-10";
 

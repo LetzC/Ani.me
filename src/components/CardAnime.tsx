@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,8 +14,14 @@ interface Anime {
 }
 
 const CardAnime = ({ anime }: { anime: Anime }) => {
+  // Substituindo o espaço das palavras por - e transformando texto em minúsculo
+  const animeTitle = anime.title.replace(/\s+/g, "-").toLowerCase();
+
   return (
-    <div className="flex flex-col relative items-center text-center mx-auto">
+    <Link
+      href={`/animes/${anime.id}/${animeTitle}`}
+      className="flex flex-col relative items-center text-center mx-auto"
+    >
       <div
         className="h-52 md:min-h-52 2xl:min-h-60 3xl:h-64
                   w-full sm:min-w-40
@@ -41,7 +48,7 @@ const CardAnime = ({ anime }: { anime: Anime }) => {
       >
         {anime.title}
       </p>
-    </div>
+    </Link>
   );
 };
 

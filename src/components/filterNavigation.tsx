@@ -11,7 +11,7 @@ const FilterNavigation = () => {
   );
 
   return (
-    <section className="flex overflow-x-auto gap-6 2xl:gap-8 pb-6">
+    <section className="flex overflow-x-auto gap-6 2xl:gap-8 pb-6 scroll-smooth">
       <button
         autoFocus={true}
         className={`${buttonStyle} text-white bg-gray-900 font-medium

@@ -6,7 +6,8 @@
     "gender": "Ação, Aventura, Fantasia",
     "synopsis": "Nanatsu no Taizai é um anime japonês baseado na série de mangá de mesmo nome escrito e ilustrado por Nakaba Suzuki. O anime segue Elizabeth, a terceira princesa do Reino de Liones, que está a procura dos Sete pecados capitais, um grupo de ex-cavaleiros sagrados que foram separados depois que o reino foi derrubado.",
     "urlImage": "/nanatsu.jpg",
-    "episodes": 24
+    "episodes": 24,
+    "releaseDate": 2014
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "gender": "Ação, Drama, Romance, Ficção Científica",
     "synopsis": "Darling in the Franxx é um anime que se passa em um mundo distópico onde a humanidade é forçada a viver em cidades fortificadas chamadas Plantations, protegidas por enormes robôs conhecidos como Franxx. A história segue um grupo de crianças pilotos que devem pilotar esses Franxx para proteger sua sociedade.",
     "urlImage": "/darlingFranxx.jpg",
-    "episodes": 1
+    "episodes": 1,
+    "releaseDate": 2018
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "gender": "Fantasia",
     "synopsis": "Douluo Dalu é um anime baseado em uma série de light novels chinesas escritas por Tang Jia San Shao. A história segue Tang San, um jovem mestre de artes marciais que renasce em um mundo de fantasia e busca se tornar o mestre das artes marciais mais poderoso.",
     "urlImage": "/DouluoDalu.jpg",
-    "episodes": 214
+    "episodes": 214,
+    "releaseDate": 2018
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "gender": "Ação, Aventura, Fantasia",
     "synopsis": "Overlord 4 é a quarta temporada do anime baseado na série de light novels japonesa escrita por Kugane Maruyama. A história segue Momonga, um jogador que fica preso em um mundo de realidade virtual e assume a identidade de seu personagem de jogo, um poderoso feiticeiro esquelético chamado Ainz Ooal Gown.",
     "urlImage": "/Overlord4.jpg",
-    "episodes": 5
+    "episodes": 5,
+    "releaseDate": 2015
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "gender": "Ação, Aventura, Fantasia",
     "synopsis": "One Piece é um anime baseado no mangá de mesmo nome escrito e ilustrado por Eiichiro Oda. A história segue Monkey D. Luffy e sua tripulação de piratas enquanto eles buscam pelo One Piece, o maior tesouro do mundo, a fim de se tornarem os piratas mais poderosos.",
     "urlImage": "/onePiece.jpg",
-    "episodes": 1029
+    "episodes": 1029,
+    "releaseDate": 1999
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "gender": "Ação, Mistério, Sobrenatural",
     "synopsis": "Fuuto Tantei é um anime que segue os irmãos Isamu Fuutarou e Shotaro Fuutarou enquanto investigam casos misteriosos na cidade de Fuuto. Eles usam suas habilidades de detetive para resolver crimes e desvendar segredos obscuros.",
     "urlImage": "/fuutoTantei.jpg",
-    "episodes": 2
+    "episodes": 2,
+    "releaseDate": 2023
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "gender": "Ação, Aventura, Comédia, Drama",
     "synopsis": "Hoshi no Samidare segue a história de Amamiya Yuuhi, um estudante universitário que descobre que tem a habilidade de controlar um golem gigante, o qual ele nomeia como Samidare. Ele é recrutado por um grupo de pessoas com habilidades especiais para lutar contra seres misteriosos que ameaçam destruir o mundo.",
     "urlImage": "/hoshiSamidare.jpg",
-    "episodes": 6
+    "episodes": 6,
+    "releaseDate": 2021
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "gender": "Ação",
     "synopsis": "Bucchigire! é um anime que segue a história de um jovem que sonha em se tornar o maior lutador de rua do mundo. Ele viaja por várias cidades enfrentando desafiantes e aprimorando suas habilidades de luta.",
     "urlImage": "/bucchigire.jpg",
-    "episodes": 6
+    "episodes": 6,
+    "releaseDate": 2022
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "gender": "Esporte",
     "synopsis": "Aoashi é um anime que se concentra no mundo do futebol de colégio. Ele segue a história de um jovem jogador talentoso que se esforça para liderar sua equipe à vitória no campeonato nacional.",
     "urlImage": "/aoashi.jpg",
-    "episodes": 16
+    "episodes": 16,
+    "releaseDate": 2022
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "gender": "Fantasia, Mistério",
     "synopsis": "Shadows House 2 é a segunda temporada do anime baseado no mangá de mesmo nome escrito e ilustrado por Somato. A história se passa em uma mansão habitada por sombras vivas que são servidas por bonecos vivos. A trama segue a relação entre as sombras e seus bonecos, explorando mistérios sobre o passado e a natureza do lugar.",
     "urlImage": "/shadowsHouse2.jpg",
-    "episodes": 2
+    "episodes": 2,
+    "releaseDate": 2023
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "gender": "Mistério, Sobrenatural, Suspense",
     "synopsis": "Summer Time Rendering é um anime que segue a história de um jovem que retorna à sua cidade natal após a morte de seu irmão mais velho. Ele descobre segredos sombrios sobre sua família e sua cidade, enquanto tenta desvendar o mistério por trás das estranhas mortes que ocorrem no local durante o verão.",
     "urlImage": "/summerTime.jpg",
-    "episodes": 19
+    "episodes": 19,
+    "releaseDate": 2021
   },
   {
     "id": 12,
@@ -105,7 +116,8 @@
     "gender": "Ação, Aventura, Fantasia",
     "synopsis": "Orient 2 é a segunda temporada do anime baseado no mangá de mesmo nome escrito e ilustrado por Shinobu Ohtaka. A história se passa em um mundo onde samurais lutam contra demônios e segue um jovem que busca vingança pelo massacre de sua vila.",
     "urlImage": "/Orient2.jpg",
-    "episodes": 2
+    "episodes": 2,
+    "releaseDate": 2021
   },
   {
     "id": 13,
@@ -114,7 +126,8 @@
     "gender": "Comédia, Drama, Gourmet, Romance",
     "synopsis": "Meng Qi Shi Shen é um anime baseado em uma série de web novels chinesas escritas por Xi Mo. A história segue um jovem chef que viaja por diferentes regiões em busca de ingredientes raros para aprimorar suas habilidades culinárias. No entanto, ele também enfrenta desafios românticos enquanto encontra pessoas que mudam sua vida.",
     "urlImage": "/mengQi.jpg",
-    "isNew": true
+    "isNew": true,
+    "releaseDate": 2024
   },
   {
     "id": 14,
@@ -123,7 +136,8 @@
     "gender": "Aventura, Drama, Fantasia, Mistério, Ficção Científica",
     "synopsis": "Made in Abyss é um anime baseado no mangá de mesmo nome escrito e ilustrado por Akihito Tsukushi. A história segue uma jovem chamada Riko, que se aventura em uma enorme e misteriosa cratera conhecida como Abyss em busca de sua mãe desaparecida. Ao longo do caminho, ela faz amizade com um robô humanoide chamado Reg e enfrenta diversos perigos e segredos ocultos nas profundezas do Abyss.",
     "urlImage": "/madeAbyss.jpg",
-    "isNew": true
+    "isNew": true,
+    "releaseDate": 2017
   },
   {
     "id": 15,
@@ -132,7 +146,8 @@
     "gender": "Ficção Científica, Slice of Life",
     "synopsis": "Prima Doll é um anime que se passa em um futuro distante onde as pessoas convivem com androides chamados Prima Dolls, que são criados para servir e entreter seus donos. A história segue um grupo de Prima Dolls em uma escola especial, onde aprendem a lidar com suas emoções e a entender melhor os humanos.",
     "urlImage": "/primaDoll.jpg",
-    "isNew": true
+    "isNew": true,
+    "releaseDate": 2023
   },
   {
     "id": 16,
@@ -141,7 +156,8 @@
     "gender": "Ação, Aventura, Drama, Fantasia",
     "synopsis": "The Rising of the Shield Hero é um anime baseado na série de light novels japonesa escrita por Aneko Yusagi. A história segue Naofumi Iwatani, um jovem que é convocado para outro mundo junto com três outros rapazes para se tornarem os heróis lendários. No entanto, Naofumi é traído e acaba se tornando o Shield Hero, o herói mais desvalorizado do grupo. Determinado a provar sua inocência e salvar o mundo, ele embarca em uma jornada épica com a ajuda de novos aliados.",
     "urlImage": "/theRisingHero.webp",
-    "isNew": true
+    "isNew": true,
+    "releaseDate": 2019
   },
   {
     "id": 17,
@@ -150,7 +166,8 @@
     "gender": "Ação, Aventura, Comédia, Fantasia",
     "synopsis": "Yuusha, Yamemasu é um anime que segue a jornada de um herói aposentado que tenta viver uma vida tranquila após salvar o mundo. No entanto, ele é constantemente puxado de volta para a ação quando novos problemas surgem e ele é obrigado a usar suas habilidades heroicas mais uma vez.",
     "urlImage": "/yuusha.png",
-    "isNew": true
+    "isNew": true,
+    "releaseDate": 2020
   },
   {
     "id": 18,
@@ -159,6 +176,7 @@
     "gender": "Comédia, Sobrenatural",
     "synopsis": "Kami Kuzu Idol é um anime que segue a história de um grupo de ídolos inexperientes que descobrem que têm o poder de se transformar em deuses. Eles usam seus novos poderes para realizar milagres e ganhar fama como ídolos divinos, mas logo descobrem que ser uma divindade não é tão fácil quanto parece.",
     "urlImage": "/kamiKuzu.jpg",
-    "isNew": true
+    "isNew": true,
+    "releaseDate": 2022
   }
 ]

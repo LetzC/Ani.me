@@ -4,6 +4,9 @@ import Image from "next/image";
 import episodeThumb from "../../../../../public/thumbEpisodes.jpg";
 import AnimeInformation from "@/components/AnimeInfomation";
 import Recommended from "@/components/Recommended";
+import Comments from "@/components/CommentsContainer";
+
+const h3Style = "mt-12 2xl:mt-12 font-medium text-lg md:text-xl 2xl:text-3xl";
 
 interface Props {
   params: { animeName: string; id: number };
@@ -32,7 +35,7 @@ export default function animeDetails({ params }: Props) {
               </section>
 
               <div className="min-w-80 max-w-80 hidden flex-col 3xl:flex">
-                <h3 className="text-xl mb-8">Recomendados</h3>
+                <h5 className="text-xl mb-8">Recomendados</h5>
 
                 <div className="h-full grid grid-rows-4 gap-y-4">
                   <Recommended animeId={animeIdParam} />
@@ -45,7 +48,17 @@ export default function animeDetails({ params }: Props) {
         </article>
 
         <section>
-          <div></div>
+          <h3 className={h3Style}>Comentários</h3>
+
+          <div className="mt-10">
+            <Comments animeId={anime.id} />
+          </div>
+        </section>
+
+        <div className="w-full h-px bg-[#151B26] my-12 2xl:my-14"></div>
+
+        <section>
+          <h3 className={h3Style}>Relacionados</h3>
         </section>
       </>
     );

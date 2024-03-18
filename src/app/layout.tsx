@@ -42,7 +42,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
 
         <footer
-          className={`${inter.className} text-xs sm:text-lg mx-auto text-gray-400 py-6 mt-20`}
+          className={`${inter.className} text-center text-xs sm:text-lg mx-auto text-gray-400 py-6 mt-20`}
         >
           Todos os direitos reservados aos criadores e produtores dos animes
         </footer>

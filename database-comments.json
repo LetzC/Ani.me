@@ -1,0 +1,38 @@
+[
+  {
+    "userId": 1,
+    "animeId": 1,
+    "message": "Este anime é incrível! Adoro a história e os personagens.",
+    "timestamp": "2024-01-26"
+  },
+  {
+    "userId": 1,
+    "animeId": 2,
+    "message": "Primeira vez assistindo e já estou adorando :)",
+    "timestamp": "2024-01-26"
+  },
+  {
+    "userId": 1,
+    "animeId": 5,
+    "message": "Eu gosto muito desse anime. As batalhas são emocionantes!",
+    "timestamp": "2024-02-01"
+  },
+  {
+    "userId": 2,
+    "animeId": 2,
+    "message": "Episodio muito top, já voltou muito bom!",
+    "timestamp": "2024-02-01"
+  },
+  {
+    "userId": 3,
+    "animeId": 2,
+    "message": "Mais um sucesso desse estúdio",
+    "timestamp": "2024-02-01"
+  },
+  {
+    "userId": 2,
+    "animeId": 16,
+    "message": "Os personagens têm personalidades tão interessantes. Mal posso esperar pela próxima temporada!",
+    "timestamp": "2024-03-12"
+  }
+]

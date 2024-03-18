@@ -30,6 +30,7 @@ const Catalog = ({ getNew = false }: { getNew?: boolean }) => {
             onClickFunction={() =>
               setVisibleAnimes(filteredAnimesDatabase.length)
             }
+            fullWidth={false}
           >
             Ver mais
           </Button>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import databaseAnime from "../../database-animes.json";
 import Link from "next/link";
 
@@ -10,7 +9,7 @@ const Recommended = ({ animeId }: { animeId: Number }) => {
 
   const randomAnimes = filteredDatabase.slice(0, 4);
 
-  if (randomAnimes) {
+  if (randomAnimes.length > 0) {
     return randomAnimes.map((anime) => (
       <Link
         href={`/animes/${anime.id}/${anime.title

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "username": "Bruno San",
+    "email": "bruno@email.com",
+    "urlProfilePicture": "/profilePictures/profilePictureUser1.png"
+  },
+  {
+    "id": 2,
+    "username": "Sofia",
+    "email": "sofia@email.com",
+    "urlProfilePicture": "/profilePictures/profilePictureUser2.png"
+  },
+  {
+    "id": 3,
+    "username": "Pedro H",
+    "email": "pedro@email.com",
+    "urlProfilePicture": "/profilePictures/profilePictureUser3.jpg"
+  }
+]

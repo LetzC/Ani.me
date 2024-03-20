@@ -20,34 +20,36 @@ const CardAnime = ({ anime }: { anime: Anime }) => {
   return (
     <Link
       href={`/animes/${anime.id}/${animeTitle}`}
-      className="flex flex-col relative items-center text-center mx-auto"
+      className="flex flex-col relative items-center text-center mx-auto w-full"
     >
-      <div
-        className="h-52 md:min-h-52 2xl:min-h-60 3xl:h-64
+      <div className="col-span-1 w-full max-w-48 hover:scale-110 transition-transform cursor-pointer mx-auto">
+        <div
+          className="h-52 md:min-h-52 2xl:min-h-60 3xl:h-64
                   w-full sm:min-w-40
                   rounded-xl z-[-2]
                   "
-        style={{
-          backgroundImage: `url(${anime.urlImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          boxShadow: "rgba(0, 0, 0, 1) 0px -82px 76px -32px inset",
-        }}
-      ></div>
+          style={{
+            backgroundImage: `url(${anime.urlImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            boxShadow: "rgba(0, 0, 0, 1) 0px -82px 76px -32px inset",
+          }}
+        ></div>
 
-      {anime.episodes ? (
+        {anime.episodes ? (
+          <p
+            className={`${inter.className} text-gray-400 text-xs relative bottom-8 2xl:text-sm`}
+          >{`Episódio ${anime.episodes}`}</p>
+        ) : null}
+
         <p
-          className={`${inter.className} text-gray-400 text-xs relative bottom-8 2xl:text-sm`}
-        >{`Episódio ${anime.episodes}`}</p>
-      ) : null}
-
-      <p
-        className={`max-w-[169px] text-sm 2xl:text-lg ${
-          anime.episodes ? "" : "mt-8"
-        }`}
-      >
-        {anime.title}
-      </p>
+          className={`max-w-[169px] text-sm 2xl:text-lg ${
+            anime.episodes ? "" : "mt-8"
+          }`}
+        >
+          {anime.title}
+        </p>
+      </div>
     </Link>
   );
 };

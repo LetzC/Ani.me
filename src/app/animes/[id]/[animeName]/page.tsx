@@ -5,6 +5,7 @@ import episodeThumb from "../../../../../public/thumbEpisodes.jpg";
 import AnimeInformation from "@/components/AnimeInfomation";
 import Recommended from "@/components/Recommended";
 import Comments from "@/components/CommentsContainer";
+import Related from "@/components/Related";
 
 const h3Style = "mt-12 2xl:mt-12 font-medium text-lg md:text-xl 2xl:text-3xl";
 
@@ -58,7 +59,9 @@ export default function animeDetails({ params }: Props) {
         <div className="w-full h-px bg-[#151B26] my-12 2xl:my-14"></div>
 
         <section>
-          <h3 className={h3Style}>Relacionados</h3>
+          <h3 className={`${h3Style} mb-10`}>Relacionados</h3>
+
+          <Related animeGender={anime.gender} />
         </section>
       </>
     );

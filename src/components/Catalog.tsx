@@ -15,7 +15,7 @@ const Catalog = ({ getNew = false }: { getNew?: boolean }) => {
   );
 
   return (
-    <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-4 gap-y-11 md:gap-y-14">
+    <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-4 gap-y-11 md:gap-y-14">
       {filteredAnimesDatabase.slice(0, visibleAnimes).map((anime) => (
         <div key={anime.id}>
           <CardAnime anime={anime} />

@@ -3,13 +3,19 @@
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 import MenuBurger from "./MenuBurger";
+import { useEffect, useState } from "react";
 
 const linkStyle = "hover:text-blue-500 transition-colors";
 
 const Nav = () => {
+  const [isClient, setIsClient] = useState(false);
   const isBurger = useMediaQuery({ query: "(max-width: 1024px)" });
 
-  if (isBurger) {
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (isClient && isBurger) {
     return <MenuBurger />;
   } else {
     return (

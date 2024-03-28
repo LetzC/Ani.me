@@ -31,11 +31,12 @@ export default function animeDetails({ params }: Props) {
                 <Image
                   src={episodeThumb}
                   alt={anime.title}
+                  priority
                   className="w-full"
                 />
               </section>
 
-              <div className="min-w-80 max-w-80 hidden flex-col 3xl:flex">
+              <div className="min-w-80 max-w-80 hidden flex-col 2xl:flex">
                 <h5 className="text-xl mb-8">Recomendados</h5>
 
                 <div className="h-full grid grid-rows-4 gap-y-4">

@@ -1,21 +1,25 @@
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import animeService, { AnimeInterface } from "@/app/services/animeService";
 
 const inter = Inter({
   subsets: ["latin"],
   weight: "500",
 });
 
-interface Anime {
-  id: number;
-  title: string;
-  urlImage: string;
-  episodes?: number;
+interface props {
+  anime: AnimeInterface;
 }
 
-const CardAnime = ({ anime }: { anime: Anime }) => {
-  // Substituindo o espaço das palavras por - e transformando texto em minúsculo
-  const animeTitle = anime.title.replace(/\s+/g, "-").toLowerCase();
+const CardAnime = ({ anime }: props) => {
+  let animeTitle;
+
+  try {
+    animeTitle = animeService.getLowAnimeTitle(anime.id);
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
 
   return (
     <Link

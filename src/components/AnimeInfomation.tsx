@@ -1,21 +1,16 @@
+import { AnimeInterface } from "@/app/services/animeService";
+
 const strongStyle = "text-white mr-2";
 
 const pStyle = "text-sm text-gray-400 lg:text-base";
 
 const divStyle = "flex flex-col gap-2";
 
-interface Anime {
-  id: number;
-  title: string;
-  studio: string;
-  gender: string;
-  synopsis: string;
-  urlImage: string;
-  episodes?: number;
-  isNew?: boolean;
+interface props {
+  anime: AnimeInterface;
 }
 
-const AnimeInformation = ({ anime }: { anime: Anime }) => {
+const AnimeInformation = ({ anime }: props) => {
   return (
     <section className="flex items-center gap-x-10 max-h-72">
       <div

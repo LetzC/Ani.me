@@ -23,6 +23,16 @@ const animeService = {
     } else {
       throw new Error('Anime não encontrado'); // Lança um erro caso o anime não seja encontrado
     }
+  },
+
+  getRelatedGenres: (animeGender: string) => {
+    // Filtrando animes que correspondem com o genero recebido por parametro
+    const filteredAnimes = animeDatabase.filter((anime) => {
+      const genders = anime.gender.split(", ");
+      return genders.some((gender) => animeGender.includes(gender));
+    });
+
+    return filteredAnimes;
   }
 };
 

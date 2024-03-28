@@ -1,15 +1,11 @@
-import databaseAnimes from "../../database-animes.json";
+import animeService from "@/app/services/animeService";
 import CardAnime from "./CardAnime";
 
 const Related = ({ animeGender }: { animeGender: string }) => {
-  // Filtrando animes que correspondem com o genero recebido por parametro
-  const filteredAnimes = databaseAnimes.filter((anime) => {
-    const genders = anime.gender.split(", ");
-    return genders.some((gender) => animeGender.includes(gender));
-  });
+  const animesRelatedGenres = animeService.getRelatedGenres(animeGender);
 
   // Ordenando do que mais corresponde com o genero recebido por parametro, até o que menos corresponde (que tenha pelo menos 1 desses generos)
-  const sortedAnimes = filteredAnimes.sort((a, b) => {
+  const sortedAnimes = animesRelatedGenres.sort((a, b) => {
     const aGenders = a.gender.split(", ");
     const bGenders = b.gender.split(", ");
     const aMatches = aGenders.filter((gender) => gender === animeGender).length;

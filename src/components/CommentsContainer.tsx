@@ -37,7 +37,7 @@ const CommentsContainer = ({ animeId }: { animeId: number }) => {
             <Comment user={user} comment={comment} />
 
             {index !== commentsToRender.length - 1 && (
-              <div className="w-full h-px bg-[#151B26] my-4 2xl:my-8"></div>
+              <div className="w-full h-px bg-dark-bluish-gray my-4 2xl:my-8"></div>
             )}
           </section>
         );

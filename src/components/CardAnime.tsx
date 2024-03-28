@@ -42,7 +42,7 @@ const CardAnime = ({ anime }: props) => {
 
         {anime.episodes ? (
           <p
-            className={`${inter.className} text-gray-400 text-xs relative bottom-8 2xl:text-sm`}
+            className={`${inter.className} text-light-gray text-xs relative bottom-8 2xl:text-sm`}
           >{`Episódio ${anime.episodes}`}</p>
         ) : null}
 

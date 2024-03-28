@@ -24,7 +24,7 @@ const Recommended = ({ animeId }: { animeId: number }) => {
         <Link
           href={`/animes/${anime.id}/${animeTitle}`}
           key={anime.id}
-          className="bg-[#151B26] flex items-center h-full"
+          className="bg-dark-bluish-gray flex items-center h-full"
         >
           <div
             className="min-w-28 h-full"

@@ -56,7 +56,7 @@ export default function animeDetails({ params }: Props) {
           </div>
         </section>
 
-        <div className="w-full h-px bg-[#151B26] my-12 2xl:my-14"></div>
+        <div className="w-full h-px bg-dark-bluish-gray my-12 2xl:my-14"></div>
 
         <section>
           <h3 className={`${h3Style} mb-10`}>Relacionados</h3>

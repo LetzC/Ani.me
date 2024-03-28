@@ -11,7 +11,7 @@ export default function Home() {
 
       <section className="mb-16 mt-12 md:mb-14 2xl:mb-16">
         <h2 className="text-2xl 2xl:text-4xl">Últimas novidades</h2>
-        <p className="text-gray-300 text-sm mt-2 2xl:text-lg">
+        <p className="text-light-gray text-sm mt-2 2xl:text-lg">
           O que você vai assistir hoje?
         </p>
         <CarouselAnimes />
@@ -22,7 +22,7 @@ export default function Home() {
         <Catalog />
       </section>
 
-      <div className="h-px w-full bg-[#151B26] my-12 xl:my-16"></div>
+      <div className="h-px w-full bg-dark-bluish-gray my-12 xl:my-16"></div>
 
       <section>
         <h3 className={titleStyle}>Animes recentes</h3>

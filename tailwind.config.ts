@@ -21,7 +21,13 @@ const config: Config = {
       'xl': '1280px',
       '2xl': '1536px',
       '3xl': '1920px',
-    }
+    },
+    colors: {
+      'white': '#ffffff',
+      'dark-bluish-gray': '#151B26',
+      'emphasis': '#00A3FF',
+      'light-gray': '#BFBFBF',
+    },
   },
   plugins: [],
 };

@@ -2,7 +2,7 @@ import { AnimeInterface } from "@/app/services/animeService";
 
 const strongStyle = "text-white mr-2";
 
-const pStyle = "text-sm text-gray-400 lg:text-base";
+const pStyle = "text-sm text-light-gray lg:text-base";
 
 const divStyle = "flex flex-col gap-2";
 

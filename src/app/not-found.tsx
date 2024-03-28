@@ -21,7 +21,7 @@ const NotFound = () => {
 
       <button
         onClick={() => router.back()}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full transition-colors"
+        className="bg-emphasis hover:bg-[#0E77B4] text-white font-medium py-2 px-6 rounded-full transition-colors"
       >
         Voltar
       </button>

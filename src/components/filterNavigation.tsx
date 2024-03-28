@@ -2,7 +2,7 @@
 
 const buttonStyle = `text-sm md:text-lg px-6 md:px-11 py-2
                    
-outline-none text-center text-gray-300 border-2 border-gray-900 rounded-full transition-colors
+outline-none text-center text-light-gray border-2 border-dark-bluish-gray rounded-full transition-colors
 `;
 
 const FilterNavigation = () => {
@@ -14,9 +14,9 @@ const FilterNavigation = () => {
     <section className="flex overflow-x-auto gap-6 2xl:gap-8 pb-6 scroll-smooth">
       <button
         autoFocus={true}
-        className={`${buttonStyle} text-white bg-gray-900 font-medium
-        active:border active:border-[#00A3FF] 
-      hover:border hover:border-[#00A3FF] 
+        className={`${buttonStyle} text-white bg-dark-bluish-gray font-medium
+        active:border active:border-emphasis 
+      hover:border hover:border-emphasis
       `}
       >
         Todos
@@ -25,8 +25,8 @@ const FilterNavigation = () => {
         <button
           key={letter}
           className={`${buttonStyle}
-          focus:bg-[#00A3FF] focus:font-medium focus:text-white 
-          hover:bg-[#00A3FF] 
+          focus:bg-emphasis focus:font-medium focus:text-white 
+          hover:bg-emphasis
           `}
         >
           {letter}

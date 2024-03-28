@@ -11,7 +11,7 @@ const Button: React.FC<ButtonProps> = ({
   onClickFunction,
   fullWidth,
 }) => {
-  const buttonClasses = `bg-gray-900 py-2 ${
+  const buttonClasses = `bg-dark-bluish-gray py-2 ${
     fullWidth ? "w-full" : "w-48"
   } col-span-full mx-auto rounded`;
 

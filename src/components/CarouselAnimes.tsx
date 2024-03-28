@@ -46,7 +46,7 @@ const CarouselAnimes = () => {
               <p className="relative md:max-w-[65%] uppercase text-white font-medium text-sm md:text-2xl 3xl:text-4xl text-left z-10">
                 {animeNew.title}
               </p>
-              <p className="relative md:max-w-[50%] text-gray-300 text-xs md:text-sm 2xl:text-lg text-left z-10">
+              <p className="relative md:max-w-[50%] text-light-gray text-xs md:text-sm 2xl:text-lg text-left z-10">
                 {animeNew.description}
               </p>
             </>

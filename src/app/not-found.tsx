@@ -9,7 +9,7 @@ const NotFound = () => {
   const router = useRouter();
 
   return (
-    <article className="flex flex-col justify-center items-center">
+    <article className="flex flex-grow flex-col justify-center items-center">
       <Image
         alt="404"
         src={errorImage}

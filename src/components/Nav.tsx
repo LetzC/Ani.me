@@ -29,13 +29,13 @@ const Nav = () => {
         <Link href="/" className={linkStyle}>
           Início
         </Link>
-        <Link href="/list" className={linkStyle}>
+        <Link href="/lista" className={linkStyle}>
           Lista
         </Link>
-        <Link href="/genres" className={linkStyle}>
+        <Link href="/generos" className={linkStyle}>
           Gêneros
         </Link>
-        <Link href="/" className={linkStyle}>
+        <Link href="/novos-episodios" className={linkStyle}>
           Novos episódios
         </Link>
         <input

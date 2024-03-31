@@ -15,9 +15,9 @@ const MenuBurger = () => {
         <>
           <nav className="w-full flex flex-col text-center gap-4 py-4 md:py-6 absolute left-0 top-20 bg-slate-900 ">
             <Link href="/">Início</Link>
-            <Link href="/list">Lista</Link>
-            <Link href="/genres">Gêneros</Link>
-            <Link href="/">Novos episódios</Link>
+            <Link href="/lista">Lista</Link>
+            <Link href="/generos">Gêneros</Link>
+            <Link href="/novos-episodios">Novos episódios</Link>
           </nav>
           <FiX onClick={() => setStatus(false)} className={iconStyle} />
         </>

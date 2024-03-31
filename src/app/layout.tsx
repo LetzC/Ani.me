@@ -42,7 +42,7 @@ export default function RootLayout({
           <Nav />
         </header>
 
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow flex flex-col">{children}</main>
 
         <footer
           className={`${inter.className} text-center text-xs sm:text-lg mx-auto text-light-gray py-6 mt-20`}

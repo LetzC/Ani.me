@@ -1,8 +1,17 @@
 import animeService from "@/app/services/animeService";
 import CardAnime from "./CardAnime";
 
-const Related = ({ animeGender }: { animeGender: string }) => {
-  const animesRelatedGenres = animeService.getRelatedGenres(animeGender);
+const Related = ({
+  animeGender,
+  animeId,
+}: {
+  animeGender: string;
+  animeId: number;
+}) => {
+  const animesRelatedGenres = animeService.getRelatedGenres(
+    animeGender,
+    animeId
+  );
 
   // Ordenando do que mais corresponde com o genero recebido por parametro, até o que menos corresponde (que tenha pelo menos 1 desses generos)
   const sortedAnimes = animesRelatedGenres.sort((a, b) => {

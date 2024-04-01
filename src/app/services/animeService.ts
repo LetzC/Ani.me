@@ -25,11 +25,21 @@ const animeService = {
     }
   },
 
-  getRelatedGenres: (animeGender: string) => {
-    // Filtrando animes que correspondem com o genero recebido por parametro
+  getRelatedGenres: (animeGender: string, animeId: number) => {
     const filteredAnimes = animeDatabase.filter((anime) => {
       const genders = anime.gender.split(", ");
-      return genders.some((gender) => animeGender.includes(gender));
+      return genders.some((gender) => animeGender.includes(gender)) && anime.id !== animeId;
+    });
+
+    return filteredAnimes;
+  },
+
+  getRelatedAnimesSearch: (search: string) => {
+    const formattedSearch = search.replace(/[-\s]+/g, '').toLocaleLowerCase(); // Remove hífens e espaços e converte para minúsculas
+
+    const filteredAnimes = animeDatabase.filter((anime) => {
+      const titleWithoutHyphens = anime.title.replace(/[-\s]+/g, ''); // Remove hífens e espaços do título
+      return titleWithoutHyphens.toLocaleLowerCase().includes(formattedSearch);
     });
 
     return filteredAnimes;

@@ -62,7 +62,7 @@ export default function animeDetails({ params }: Props) {
         <section>
           <h3 className={`${h3Style} mb-10`}>Relacionados</h3>
 
-          <Related animeGender={anime.gender} />
+          <Related animeGender={anime.gender} animeId={anime.id} />
         </section>
       </>
     );

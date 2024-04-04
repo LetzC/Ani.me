@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Rubik, Inter } from "next/font/google";
 import "./globals.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Nav from "@/components/Nav";
 import Link from "next/link";
 
 import React from "react";
+import NavContainer from "@/components/NavContainer";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -39,7 +39,7 @@ export default function RootLayout({
           <Link href="/" className={"text-2xl font-medium text-emphasis"}>
             Ani.me
           </Link>
-          <Nav />
+          <NavContainer />
         </header>
 
         <main className="flex-grow flex flex-col">{children}</main>

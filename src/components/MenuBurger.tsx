@@ -2,23 +2,22 @@
 
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import Link from "next/link";
+import NavLinks from "./NavLinks";
 
 const iconStyle = "min-h-6 min-w-6";
 
 const MenuBurger = () => {
   const [status, setStatus] = useState(false);
 
+  const closeMenu = () => {
+    setStatus(false);
+  };
+
   return (
     <>
       {status ? (
         <>
-          <nav className="w-full flex flex-col text-center gap-4 py-4 md:py-6 absolute left-0 top-20 bg-slate-900 ">
-            <Link href="/">Início</Link>
-            <Link href="/lista">Lista</Link>
-            <Link href="/generos">Gêneros</Link>
-            <Link href="/novos-episodios">Novos episódios</Link>
-          </nav>
+          <NavLinks isMobile={true} closeMenu={closeMenu} />
           <FiX onClick={() => setStatus(false)} className={iconStyle} />
         </>
       ) : (

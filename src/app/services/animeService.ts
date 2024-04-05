@@ -43,6 +43,20 @@ const animeService = {
     });
 
     return filteredAnimes;
+  },
+
+  getUniqueGenres: () => {
+    let genres: string[] = [];
+
+    animeDatabase.forEach((anime) => {
+      const animeGenres = anime.gender.split(',').map(genre => genre.trim());
+      genres = genres.concat(animeGenres);
+    });
+
+    // Remove gêneros duplicados
+    genres = genres.filter((genre, index) => genres.indexOf(genre) === index);
+
+    return genres;
   }
 };
 

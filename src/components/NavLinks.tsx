@@ -1,10 +1,11 @@
 "use client";
 
+import animeService from "@/app/services/animeService";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const linkStyle = "hover:text-emphasis transition-colors";
+const linkStyle = "hover:text-emphasis transition-colors cursor-pointer";
 
 interface Props {
   isMobile?: boolean;
@@ -15,6 +16,9 @@ const NavLinks = ({ isMobile = false, closeMenu }: Props) => {
   const router = useRouter();
   const [isClient, setIsClient] = useState(false);
   const [search, setSearch] = useState("");
+  const [dropDown, setDropDown] = useState(false);
+
+  const genres = animeService.getUniqueGenres();
 
   useEffect(() => {
     setIsClient(true);
@@ -41,6 +45,23 @@ const NavLinks = ({ isMobile = false, closeMenu }: Props) => {
     };
   }, [router, search]); // closeMenu foi omitido intencionalmente
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (event.target) {
+        const target = event.target as HTMLElement;
+        if (dropDown && !target.closest(".dropdown-container")) {
+          setDropDown(false);
+        }
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [dropDown]);
+
   if (isClient && isMobile) {
     return (
       <nav className="w-full flex flex-col items-center gap-6 absolute text-center p-5 md:p-6 md:px-24 left-0 top-16 bg-dark-bluish-gray z-50">
@@ -58,9 +79,33 @@ const NavLinks = ({ isMobile = false, closeMenu }: Props) => {
           </li>
 
           <li>
-            <Link href="/generos" onClick={closeMenu} className={linkStyle}>
+            <a
+              onClick={() => setDropDown(!dropDown)}
+              className={dropDown ? linkStyle + " text-emphasis" : linkStyle}
+            >
               Gêneros
-            </Link>
+            </a>
+            <ul
+              className={`${
+                dropDown
+                  ? "grid gap-6 w-full right-0 mt-2 py-3 px-12 bg-dark-bluish-gray text-light-gray rounded z-40"
+                  : "hidden"
+              }`}
+            >
+              {genres.length > 0 &&
+                genres.map((genre, index) => (
+                  <li key={index}>
+                    <Link
+                      href={`/generos/${genre
+                        .replace(/\s+/g, "-") // Substituindo o espaço das palavras por -
+                        .toLowerCase()}`} // Transformando texto em minúsculo
+                      className={linkStyle}
+                    >
+                      {genre}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
           </li>
 
           <li>
@@ -101,8 +146,34 @@ const NavLinks = ({ isMobile = false, closeMenu }: Props) => {
             </Link>
           </li>
 
-          <li className={linkStyle}>
-            <a href="#">Gêneros</a>
+          <li>
+            <a
+              onClick={() => setDropDown(!dropDown)}
+              className={dropDown ? linkStyle + " text-emphasis" : linkStyle}
+            >
+              Gêneros
+            </a>
+            <ul
+              className={`${
+                dropDown
+                  ? "grid grid-cols-2 gap-6 absolute mt-2 py-8 px-12 bg-dark-bluish-gray list-disc text-light-gray rounded z-40"
+                  : "hidden"
+              }`}
+            >
+              {genres.length > 0 &&
+                genres.map((genre, index) => (
+                  <li key={index}>
+                    <Link
+                      href={`/generos/${genre
+                        .replace(/\s+/g, "-") // Substituindo o espaço das palavras por -
+                        .toLowerCase()}`} // Transformando texto em minúsculo
+                      className={linkStyle}
+                    >
+                      {genre}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
           </li>
 
           <li>

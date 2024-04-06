@@ -57,7 +57,14 @@ const animeService = {
     genres = genres.filter((genre, index) => genres.indexOf(genre) === index);
 
     return genres;
-  }
+  },
+
+  getAnimesByGender: (animeGender: string) => {
+    return animeDatabase.filter((anime) => {
+      const genders = anime.gender.split(", ");
+      return genders.some((gender) => animeGender.includes(gender));
+    });
+  },
 };
 
 export default animeService;

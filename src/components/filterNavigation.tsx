@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const buttonStyle = `text-sm md:text-lg px-6 md:px-11 py-2
                    
 outline-none text-center text-light-gray border-2 border-dark-bluish-gray rounded-full transition-colors
@@ -12,7 +14,8 @@ const FilterNavigation = () => {
 
   return (
     <section className="flex overflow-x-auto gap-6 2xl:gap-8 pb-6 scroll-smooth">
-      <button
+      <Link
+        href={"/lista"}
         autoFocus={true}
         className={`${buttonStyle} text-white bg-dark-bluish-gray font-medium
         active:border active:border-emphasis 
@@ -20,9 +23,10 @@ const FilterNavigation = () => {
       `}
       >
         Todos
-      </button>
+      </Link>
       {alphabet.map((letter) => (
-        <button
+        <Link
+          href={`/a-z/${letter.toLowerCase()}`}
           key={letter}
           className={`${buttonStyle}
           focus:bg-emphasis focus:font-medium focus:text-white 
@@ -30,7 +34,7 @@ const FilterNavigation = () => {
           `}
         >
           {letter}
-        </button>
+        </Link>
       ))}
     </section>
   );

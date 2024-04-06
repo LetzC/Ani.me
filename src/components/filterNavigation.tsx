@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 const buttonStyle = `text-sm md:text-lg px-6 md:px-11 py-2

@@ -12,6 +12,10 @@ export interface AnimeInterface {
 }
 
 const animeService = {
+  getAllAnimes: () => {
+    return animeDatabase
+  },
+
   getLowAnimeTitle: (animeId: number) => {
     // Encontrando o anime correspondente no animeDatabase
     const anime = animeDatabase.find((anime: AnimeInterface) => anime.id === animeId);
@@ -65,6 +69,17 @@ const animeService = {
       return genders.some((gender) => animeGender.includes(gender));
     });
   },
+
+  getAnimesByFirstLetter: (letter: string) => {
+    const filteredAnimes = animeDatabase.filter((anime) => {
+      // Converte o título para minúsculas e pega o primeiro caractere
+      const firstLetter = anime.title.charAt(0).toLowerCase();
+      // Retorna true se a primeira letra do título corresponder à letra fornecida
+      return firstLetter === letter.toLowerCase();
+    });
+
+    return filteredAnimes;
+  }
 };
 
 export default animeService;

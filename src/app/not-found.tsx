@@ -14,6 +14,7 @@ const NotFound = () => {
         alt="404"
         src={errorImage}
         className="w-full max-w-md 3xl:max-w-xl"
+        unoptimized={true}
       />
       <h1 className="font-medium text-lg mb-8 md:text-2xl 2xl:text-3xl md:mb-10">
         Nada encontrado!

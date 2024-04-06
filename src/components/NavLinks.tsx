@@ -96,9 +96,8 @@ const NavLinks = ({ isMobile = false, closeMenu }: Props) => {
                 genres.map((genre, index) => (
                   <li key={index}>
                     <Link
-                      href={`/generos/${genre
-                        .replace(/\s+/g, "-") // Substituindo o espaço das palavras por -
-                        .toLowerCase()}`} // Transformando texto em minúsculo
+                      href={`/generos/${genre.replace(/\s+/g, "-")}`} // Substituindo o espaço das palavras por -
+                      onClick={closeMenu}
                       className={linkStyle}
                     >
                       {genre}
@@ -164,9 +163,8 @@ const NavLinks = ({ isMobile = false, closeMenu }: Props) => {
                 genres.map((genre, index) => (
                   <li key={index}>
                     <Link
-                      href={`/generos/${genre
-                        .replace(/\s+/g, "-") // Substituindo o espaço das palavras por -
-                        .toLowerCase()}`} // Transformando texto em minúsculo
+                      href={`/generos/${genre.replace(/\s+/g, "-")}`} // Substituindo o espaço das palavras por -
+                      onClick={closeMenu}
                       className={linkStyle}
                     >
                       {genre}

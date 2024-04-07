@@ -9,11 +9,13 @@ import NavContainer from "@/components/NavContainer";
 
 const rubik = Rubik({
   subsets: ["latin"],
+  display: "swap",
   weight: ["400", "500"],
 });
 
 const inter = Inter({
   subsets: ["latin"],
+  display: "swap",
   weight: ["400", "500", "600"],
 });
 
